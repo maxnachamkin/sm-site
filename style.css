@@ -1,0 +1,189 @@
+/*
+	Theme Name:     Dr. Sue Morter
+	Theme URI:      http://drsuemorter.com
+	Description:    Dr. Sue Morter Child Theme for MD
+	Author:         Max Nachamkin
+	Author URI:     http://www.transformationagency.com
+	Template:       marketers-delight
+	Version:        1.2
+*/
+/*------------------------------------*  SETTINGS
+\*------------------------------------*/
+/*------------------------------------*  VARIABLES
+\*------------------------------------*/
+/*------------------------------------*  MIXINS
+\*------------------------------------*/
+/*------------------------------------*  FONTS
+\*------------------------------------*/
+.font-main,
+.logo,
+.headline,
+h1, h2, h3, h4, h5, h6,
+.large-title, .small-title, .med-title,
+.button,
+button,
+input[type="submit"],
+.tagline {
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, serif;
+}
+
+/*------------------------------------*  GLOBAL
+\*------------------------------------*/
+body {
+    background-color: #dedccf;
+}
+
+/*------------------------------------*  HEADER
+\*------------------------------------*/
+.header {
+    background-color: #dedccf;
+}
+
+.header .logo a {
+    color: #5d0600;
+}
+
+.header .header-menu a {
+    color: #000;
+}
+
+/*------------------------------------*  HERO BANNER
+\*------------------------------------*/
+#hero {
+    background-color: #000;
+    height: 500px;
+}
+
+#hero .hero-inner {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+#hero .hero-inner h2 {
+    color: white;
+    font-size: 62px;
+    line-height: 1em;
+}
+
+@media all and (max-width: 1118px) {
+    #hero .hero-inner h2 {
+        top: -100px;
+    }
+}
+
+#hero .hero-inner .button {
+    margin-top: 50px;
+}
+
+/*------------------------------------*  HOME FUNNEL LEAD (3 BOXES)
+\*------------------------------------*/
+.home-funnel-lead h4, .home-funnel-lead p, .home-funnel-lead .button {
+    text-align: center;
+}
+
+/*------------------------------------*  HOME BIO
+\*------------------------------------*/
+#home-bio h4 {
+    padding-bottom: 25px;
+    font-size: 42px;
+    line-height: 1em;
+}
+
+/*------------------------------------*  HOME FOOTER BOXES
+\*------------------------------------*/
+#home-boxes .sm-box-lead {
+    overflow: hidden;
+}
+
+#home-boxes .sm-box-lead h3 {
+    font-size: 34px;
+    line-height: 44px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+#home-boxes .sm-box-lead p {
+    padding-bottom: 25px;
+}
+
+#home-boxes .sm-box-lead .col-link span {
+    border-bottom: 1px solid #5d0600;
+    color: #5d0600;
+}
+
+#home-boxes .sm-box-lead .columns-3 {
+    width: initial;
+}
+
+#home-boxes .sm-box-lead .col-inner {
+    background-color: #fff;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    color: #1e1e1e;
+    cursor: pointer;
+    display: block;
+    padding: 52px 39px;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#home-boxes .sm-box-lead .col-inner:hover {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    -ms-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+/*------------------------------------*  HOME MEDITATION LEAD
+\*------------------------------------*/
+#home-meditation {
+    width: 100%;
+    height: 250px;
+    background-color: #000;
+    color: white;
+}
+
+#home-meditation .inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#home-meditation h3 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+#home-meditation h4 {
+    font-size: 28px;
+    line-height: 1.5em;
+}
+
+#home-meditation p {
+    font-size: 14px;
+}
+
+/*------------------------------------*  COMPONENTS
+\*------------------------------------*/
+.lead-spacer {
+    padding-top: 25px;
+}
+
+/*------------------------------------*  BUTTONS
+\*------------------------------------*/
+.button {
+    background-color: #5d0600 !important;
+}

@@ -1,0 +1,278 @@
+/*
+	Theme Name:     Dr. Sue Morter
+	Theme URI:      http://drsuemorter.com
+	Description:    Dr. Sue Morter Child Theme for MD
+	Author:         Max Nachamkin
+	Author URI:     http://www.transformationagency.com
+	Template:       marketers-delight
+	Version:        1.2
+*/
+
+/*------------------------------------*\
+  SETTINGS
+\*------------------------------------*/
+
+/*------------------------------------*\
+  VARIABLES
+\*------------------------------------*/
+
+$bg-color: #dedccf;
+$text-color: #800000;
+$link-color: #5d0600;
+
+$logo-color: #5d0600;
+$nav-link-color: #000;
+
+/*------------------------------------*\
+  MIXINS
+\*------------------------------------*/
+
+@mixin main-font() {
+  font-family: 'Dosis', sans-serif;
+}
+
+@mixin body-font() {
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, serif;
+}
+
+/*------------------------------------*\
+  FONTS
+\*------------------------------------*/
+
+.font-main,
+.logo,
+.headline,
+h1, h2, h3, h4, h5, h6,
+.large-title, .small-title, .med-title,
+.button,
+button,
+input[type="submit"],
+.tagline {
+	@include main-font();
+}
+
+body {
+  @include body-font();
+}
+
+/*------------------------------------*\
+  GLOBAL
+\*------------------------------------*/
+
+body {
+  background-color: $bg-color;
+}
+
+
+
+
+
+/*------------------------------------*\
+  HEADER
+\*------------------------------------*/
+
+.header {
+  background-color: $bg-color;
+
+  .logo {
+    a {
+      color: $logo-color;
+    }
+  }
+
+  .header-menu {
+    a {
+      color: $nav-link-color;
+    }
+  }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+  HERO BANNER
+\*------------------------------------*/
+
+#hero {
+  background-color: #000;
+  height: 500px;
+
+  .hero-inner {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 200px;
+
+    h2 {
+      color: white;
+      font-size: 62px;
+      line-height: 1em;
+
+      @media all and (max-width: 1118px) {
+        top: -100px;
+      }
+
+    }
+
+
+
+    .button {
+        margin-top: 50px;
+    }
+
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+  HOME FUNNEL LEAD (3 BOXES)
+\*------------------------------------*/
+
+.home-funnel-lead {
+  h4, p, .button {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  HOME BIO
+\*------------------------------------*/
+
+#home-bio {
+
+  h4 {
+    padding-bottom: 25px;
+    font-size: 42px;
+    line-height:1em;
+  }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+  HOME FOOTER BOXES
+\*------------------------------------*/
+
+#home-boxes {
+  .sm-box-lead {
+
+    overflow: hidden;
+
+    h3 {
+      font-size: 34px;
+    	line-height: 44px;
+    	margin-bottom: 16px;
+    	position: relative;
+    }
+
+    p {
+      padding-bottom: 25px;
+    }
+
+    .col-link {
+      span {
+        border-bottom: 1px solid $link-color;
+        color: $link-color;
+      }
+    }
+
+    .columns-3 {
+      width:initial;
+    }
+
+    .col-inner {
+      background-color: #fff;
+      border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+      border-radius: 3px;
+      color: #1e1e1e;
+      cursor: pointer;
+      display: block;
+      padding: 52px 39px;
+      -o-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #1e1e1e;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+        color: #fff;
+          -ms-transform: scale(1.05);
+          -moz-transform: scale(1.05);
+          -o-transform: scale(1.05);
+          -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+      }
+    }
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+  HOME MEDITATION LEAD
+\*------------------------------------*/
+
+#home-meditation {
+  width: 100%;
+  height: 250px;
+  background-color: #000;
+  color: white;
+
+  .inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+
+  h4 {
+    font-size: 28px;
+    line-height: 1.5em;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+
+
+
+/*------------------------------------*\
+  COMPONENTS
+\*------------------------------------*/
+
+.lead-spacer {
+  padding-top: 25px;
+}
+
+
+/*------------------------------------*\
+  BUTTONS
+\*------------------------------------*/
+
+.button {
+  background-color: $link-color !important;
+}
